@@ -1,7 +1,17 @@
 "use client";
 
+import { type ReactNode } from "react";
 import Link from "next/link";
-import { ArrowRight, Play, ShieldCheck } from "lucide-react";
+import {
+  ArrowRight,
+  Play,
+  ShieldCheck,
+  FlaskConical,
+  HeartPulse,
+  Cpu,
+  TrendingUp,
+  Rocket,
+} from "lucide-react";
 import { useLanguage } from "@/lib/i18n";
 
 export default function Hero() {
@@ -66,92 +76,135 @@ export default function Hero() {
 }
 
 function HeroVisual() {
+  const { t } = useLanguage();
+  const v = t.heroVisual;
+
   return (
     <div className="relative mx-auto aspect-square w-full max-w-md">
       {/* Glow */}
       <div className="absolute inset-6 rounded-[2.5rem] bg-gradient-to-br from-brand-100 via-white to-mint-100/60 blur-2xl" />
 
-      <div className="card relative h-full w-full overflow-hidden rounded-[2.25rem] p-0">
-        {/* pulse rings */}
-        <div className="absolute left-1/2 top-1/2 h-40 w-40 -translate-x-1/2 -translate-y-1/2">
-          {[0, 1, 2].map((i) => (
-            <span
-              key={i}
-              className="absolute inset-0 rounded-full border border-brand-300/50 animate-pulse-ring"
-              style={{ animationDelay: `${i * 1.1}s` }}
-            />
-          ))}
+      <div className="card relative grid h-full w-full grid-cols-2 grid-rows-3 gap-3 rounded-[2.25rem] p-3.5 sm:p-4">
+        {/* Pharma */}
+        <Tile
+          icon={<FlaskConical className="h-5 w-5" />}
+          accent="from-brand-500 to-brand-700"
+          label={v.pharma}
+          sub="R&D · GMP"
+        />
+
+        {/* MedTech — with a live indicator */}
+        <div className="relative flex flex-col justify-between rounded-2xl border border-mint-100 bg-mint-50/60 p-3.5">
+          <span className="absolute right-3 top-3 flex h-2 w-2">
+            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-mint-400 opacity-75" />
+            <span className="relative inline-flex h-2 w-2 rounded-full bg-mint-500" />
+          </span>
+          <span className="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-mint-500 to-mint-600 text-white shadow">
+            <HeartPulse className="h-5 w-5" />
+          </span>
+          <div>
+            <p className="text-sm font-bold text-ink-900">{v.medtech}</p>
+            <p className="text-[0.7rem] font-medium text-ink-500">Digital Health</p>
+          </div>
         </div>
 
-        <svg viewBox="0 0 400 400" className="relative h-full w-full" aria-hidden="true">
-          <defs>
-            <linearGradient id="hv-stroke" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0%" stopColor="#3ec0f5" />
-              <stop offset="100%" stopColor="#14b8a6" />
-            </linearGradient>
-            <linearGradient id="hv-pulse" x1="0" y1="0" x2="1" y2="0">
-              <stop offset="0%" stopColor="#1aa7ec" />
-              <stop offset="100%" stopColor="#2dd4bf" />
-            </linearGradient>
-          </defs>
-
-          {/* DNA helix */}
-          <g stroke="url(#hv-stroke)" strokeWidth="3" fill="none" opacity="0.9">
-            <path d="M150 60 C 250 110, 250 150, 150 200 C 50 250, 50 290, 150 340" />
-            <path d="M250 60 C 150 110, 150 150, 250 200 C 350 250, 350 290, 250 340" />
-            {Array.from({ length: 7 }).map((_, i) => {
-              const y = 75 + i * 42;
-              const w = Math.abs(Math.sin((i / 6) * Math.PI)) * 90 + 12;
-              const cx = 200;
-              return (
-                <line
-                  key={i}
-                  x1={cx - w / 2}
-                  y1={y}
-                  x2={cx + w / 2}
-                  y2={y}
-                  stroke="#7dd3fc"
-                  strokeWidth="2.5"
-                />
-              );
-            })}
-          </g>
-
-          {/* nodes */}
-          {Array.from({ length: 7 }).map((_, i) => {
-            const y = 75 + i * 42;
-            const w = Math.abs(Math.sin((i / 6) * Math.PI)) * 90 + 12;
-            return (
-              <g key={i}>
-                <circle cx={200 - w / 2} cy={y} r="5.5" fill="#1aa7ec" />
-                <circle cx={200 + w / 2} cy={y} r="5.5" fill="#14b8a6" />
-              </g>
-            );
-          })}
-
-          {/* pulse line */}
-          <path
-            d="M20 200 H120 l14 -46 22 92 16 -60 12 24 H380"
-            fill="none"
-            stroke="url(#hv-pulse)"
-            strokeWidth="3.5"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeDasharray="6 6"
-            className="animate-dash"
-            opacity="0.5"
+        {/* Growth — wide dark tile with an animated chart */}
+        <div className="relative col-span-2 flex flex-col overflow-hidden rounded-2xl bg-ink-900 p-3.5 text-white">
+          <div
+            className="pointer-events-none absolute inset-0 opacity-60"
+            style={{
+              background:
+                "radial-gradient(22rem 11rem at 92% 0%, rgba(26,167,236,0.4), transparent 60%)",
+            }}
           />
-        </svg>
+          <div className="relative flex items-center justify-between">
+            <p className="text-xs font-semibold text-brand-200">{v.growth}</p>
+            <span className="inline-flex items-center gap-1 rounded-full bg-mint-400/15 px-2 py-0.5 text-xs font-bold text-mint-300">
+              <TrendingUp className="h-3.5 w-3.5" /> +38%
+            </span>
+          </div>
+          <svg
+            viewBox="0 0 240 64"
+            preserveAspectRatio="none"
+            className="relative mt-1 h-full w-full"
+            aria-hidden="true"
+          >
+            <defs>
+              <linearGradient id="hv-area" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stopColor="#1aa7ec" stopOpacity="0.45" />
+                <stop offset="100%" stopColor="#1aa7ec" stopOpacity="0" />
+              </linearGradient>
+              <linearGradient id="hv-line" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0%" stopColor="#3ec0f5" />
+                <stop offset="100%" stopColor="#2dd4bf" />
+              </linearGradient>
+            </defs>
+            <path
+              d="M0 52 L40 46 L80 49 L120 32 L160 36 L200 18 L240 9 L240 64 L0 64 Z"
+              fill="url(#hv-area)"
+            />
+            <path
+              d="M0 52 L40 46 L80 49 L120 32 L160 36 L200 18 L240 9"
+              fill="none"
+              stroke="url(#hv-line)"
+              strokeWidth="3"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              vectorEffect="non-scaling-stroke"
+              strokeDasharray="440"
+              className="animate-draw"
+            />
+          </svg>
+        </div>
 
-        {/* floating chips */}
-        <div className="absolute left-5 top-6 animate-float rounded-2xl border border-brand-100 bg-white/90 px-3 py-2 shadow-lg backdrop-blur">
-          <p className="text-[0.65rem] font-semibold uppercase tracking-wide text-brand-600">Biotech</p>
-          <p className="text-sm font-bold text-ink-900">R&amp;D</p>
+        {/* Deep Tech */}
+        <Tile
+          icon={<Cpu className="h-5 w-5" />}
+          accent="from-brand-400 to-mint-500"
+          label="Deep Tech"
+          sub="AI / ML"
+        />
+
+        {/* Startups stat */}
+        <div className="flex flex-col justify-between rounded-2xl border border-brand-100 bg-brand-50/60 p-3.5">
+          <span className="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-white text-brand-600 shadow-sm">
+            <Rocket className="h-5 w-5" />
+          </span>
+          <div>
+            <p className="text-2xl font-extrabold leading-none tracking-tight text-brand-600">
+              120+
+            </p>
+            <p className="mt-1 text-[0.7rem] font-medium text-ink-500">
+              {v.startups}
+            </p>
+          </div>
         </div>
-        <div className="absolute bottom-7 right-5 animate-float-slow rounded-2xl border border-mint-200 bg-white/90 px-3 py-2 shadow-lg backdrop-blur">
-          <p className="text-[0.65rem] font-semibold uppercase tracking-wide text-mint-600">MedTech</p>
-          <p className="text-sm font-bold text-ink-900">AI Health</p>
-        </div>
+      </div>
+    </div>
+  );
+}
+
+function Tile({
+  icon,
+  accent,
+  label,
+  sub,
+}: {
+  icon: ReactNode;
+  accent: string;
+  label: string;
+  sub: string;
+}) {
+  return (
+    <div className="flex flex-col justify-between rounded-2xl border border-brand-100 bg-brand-50/50 p-3.5">
+      <span
+        className={`inline-flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br ${accent} text-white shadow`}
+      >
+        {icon}
+      </span>
+      <div>
+        <p className="text-sm font-bold text-ink-900">{label}</p>
+        <p className="text-[0.7rem] font-medium text-ink-500">{sub}</p>
       </div>
     </div>
   );

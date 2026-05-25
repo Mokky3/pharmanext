@@ -48,6 +48,12 @@ const uz = {
     { value: "15", label: "Hamkor klinika va laboratoriyalar" },
     { value: "6", label: "Markaziy Osiyo bozorlari" },
   ],
+  heroVisual: {
+    pharma: "Farma",
+    medtech: "MedTex",
+    growth: "O'sish",
+    startups: "startaplar",
+  },
   focusHome: {
     eyebrow: "Yo'nalishlarimiz",
     title: "Biz qo'llab-quvvatlaydigan chuqur texnologiyalar",
@@ -390,6 +396,12 @@ const ru: Dictionary = {
     { value: "15", label: "Партнёрских клиник и лабораторий" },
     { value: "6", label: "Рынков Центральной Азии" },
   ],
+  heroVisual: {
+    pharma: "Фарма",
+    medtech: "МедТех",
+    growth: "Рост",
+    startups: "стартапы",
+  },
   focusHome: {
     eyebrow: "Наши направления",
     title: "Глубокие технологии, которые мы поддерживаем",
@@ -726,6 +738,12 @@ const en: Dictionary = {
     { value: "15", label: "Partner clinics & labs" },
     { value: "6", label: "Central Asian markets" },
   ],
+  heroVisual: {
+    pharma: "Pharma",
+    medtech: "MedTech",
+    growth: "Growth",
+    startups: "startups",
+  },
   focusHome: {
     eyebrow: "Our focus",
     title: "The deep technologies we back",
