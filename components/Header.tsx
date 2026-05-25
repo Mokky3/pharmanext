@@ -68,11 +68,13 @@ export default function Header() {
         </div>
 
         <div className="flex items-center gap-3">
-          <LanguageSwitcher className="hidden sm:inline-flex" />
-          <Link href="/apply" className="btn btn-primary hidden h-10 px-5 text-sm sm:inline-flex">
-            {t.nav.apply}
-            <ArrowRight className="h-4 w-4" />
-          </Link>
+          <div className="hidden items-center gap-3 sm:flex">
+            <LanguageSwitcher />
+            <Link href="/apply" className="btn btn-primary h-10 px-5 text-sm">
+              {t.nav.apply}
+              <ArrowRight className="h-4 w-4" />
+            </Link>
+          </div>
           <button
             type="button"
             onClick={() => setOpen((v) => !v)}
