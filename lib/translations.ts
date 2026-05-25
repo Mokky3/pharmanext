@@ -18,7 +18,7 @@ export const localeLabels: Record<Locale, string> = {
 const uz = {
   brand: {
     name: "PharmaNext",
-    parent: "O'zfarmagentlik huzurida",
+    parent: "Tibbiyot va farmatsevtika tarmog'ini rivojlantirish agentligi huzurida",
   },
   nav: {
     home: "Bosh sahifa",
@@ -40,7 +40,7 @@ const uz = {
       "PharmaNext — O'zbekistonning farma, medtex va deep-tech inkubatori hamda akseleratori. Biz jasur ilmiy g'oyalarni odamlar hayotini yaxshilaydigan kompaniyalarga aylantiramiz.",
     ctaPrimary: "Dasturga ariza topshirish",
     ctaSecondary: "Dasturlarni ko'rish",
-    trust: "O'zbekiston Respublikasi O'zfarmagentligi tashabbusi",
+    trust: "O'zbekiston Respublikasi Tibbiyot va farmatsevtika tarmog'ini rivojlantirish agentligi tashabbusi",
   },
   stats: [
     { value: "120+", label: "Qo'llab-quvvatlangan loyihalar" },
@@ -127,7 +127,7 @@ const uz = {
     subtitle:
       "Biz nafaqat moliyalashtiramiz — butun ekotizimni bir joyga jamlaymiz.",
     items: [
-      { title: "Tartibga solishda hamrohlik", desc: "O'zfarmagentlik bilan ro'yxatdan o'tish va sertifikatlash yo'lida bevosita yordam." },
+      { title: "Tartibga solishda hamrohlik", desc: "Tibbiyot va farmatsevtika tarmog'ini rivojlantirish agentligi bilan ro'yxatdan o'tish va sertifikatlash yo'lida bevosita yordam." },
       { title: "Laboratoriya va klinika", desc: "Tadqiqot laboratoriyalari, klinik bazalar va sinov maydonchalariga kirish." },
       { title: "Kapital va investorlar", desc: "Grantlar, pre-seed va xalqaro investorlar tarmog'i bilan bog'lanish." },
       { title: "Ekspert mentorlik", desc: "Farma, tibbiyot va texnologiya sohasidagi 40+ tajribali mentor." },
@@ -139,7 +139,7 @@ const uz = {
     eyebrow: "Ekotizim",
     title: "Bizning sheriklar va ekotizim",
     names: [
-      "O'zfarmagentlik",
+      "Tibbiyot va farmatsevtika tarmog'ini rivojlantirish agentligi",
       "Sog'liqni saqlash vazirligi",
       "Tibbiyot universitetlari",
       "Innovatsion markazlar",
@@ -155,7 +155,7 @@ const uz = {
   },
   footer: {
     tagline: "O'zbekistonning farma, medtex va deep-tech inkubatori va akseleratori.",
-    parent: "O'zbekiston Respublikasi O'zfarmagentligi huzurida.",
+    parent: "O'zbekiston Respublikasi Tibbiyot va farmatsevtika tarmog'ini rivojlantirish agentligi huzurida.",
     explore: "Bo'limlar",
     contactTitle: "Aloqa",
     address: "111809, Bog'zor ko'chasi 1, Bog'zor, Zangiota tumani, Toshkent viloyati",
@@ -171,7 +171,7 @@ const uz = {
       eyebrow: "Biz haqimizda",
       title: "Sog'liqni saqlash innovatsiyalari uchun milliy platforma",
       subtitle:
-        "PharmaNext O'zfarmagentlik huzurida tashkil etilgan bo'lib, O'zbekistonda farma va tibbiyot texnologiyalari ekotizimini rivojlantirishga xizmat qiladi.",
+        "PharmaNext Tibbiyot va farmatsevtika tarmog'ini rivojlantirish agentligi huzurida tashkil etilgan bo'lib, O'zbekistonda farma va tibbiyot texnologiyalari ekotizimini rivojlantirishga xizmat qiladi.",
     },
     mission: {
       title: "Bizning missiyamiz",
@@ -191,8 +191,8 @@ const uz = {
       ],
     },
     parentOrg: {
-      title: "O'zfarmagentlik bilan hamkorlikda",
-      desc: "O'zbekiston Respublikasi Farmatsevtika tarmog'ini rivojlantirish agentligi (O'zfarmagentlik) farmatsevtika sohasini tartibga soluvchi va rivojlantiruvchi davlat organi hisoblanadi. PharmaNext uning innovatsion qanoti sifatida startaplar va davlat resurslari o'rtasida ko'prik vazifasini bajaradi.",
+      title: "Tibbiyot va farmatsevtika tarmog'ini rivojlantirish agentligi bilan hamkorlikda",
+      desc: "O'zbekiston Respublikasi Tibbiyot va farmatsevtika tarmog'ini rivojlantirish agentligi tibbiyot va farmatsevtika sohasini tartibga soluvchi va rivojlantiruvchi davlat organi hisoblanadi. PharmaNext uning innovatsion qanoti sifatida startaplar va davlat resurslari o'rtasida ko'prik vazifasini bajaradi.",
     },
   },
   programsPage: {
@@ -293,14 +293,17 @@ const uz = {
       subtitle:
         "PharmaNext qo'llab-quvvatlayotgan jamoalar bilan tanishing. Ro'yxat doimiy yangilanib boriladi.",
     },
-    note: "Namuna loyihalar — yangi oqim startaplari tez orada e'lon qilinadi.",
+    note: "Hozirda PharmaNext ekotizimidagi loyihalar.",
     items: [
-      { name: "BioGen Labs", sector: "Biotex", desc: "Mahalliy biosimilyar dori vositalarini ishlab chiqish platformasi." },
-      { name: "MedSense", sector: "MedTex", desc: "Surunkali kasalliklarni masofadan monitoring qiluvchi qurilma." },
-      { name: "DiagnoAI", sector: "Deep Tech", desc: "Tibbiy tasvirlarni sun'iy intellekt yordamida tahlil qilish." },
-      { name: "PharmaChain", sector: "Farma", desc: "Dori vositalari ta'minot zanjirini raqamlashtirish." },
-      { name: "VitaCare", sector: "Raqamli salomatlik", desc: "Bemorlar uchun telemeditsina va konsultatsiya ilovasi." },
-      { name: "GenomLab", sector: "Deep Tech", desc: "Genetik tahlil va shaxsiylashtirilgan tibbiyot yechimlari." },
+      { name: "MolGenix AI", sector: "Deep Tech", desc: "Dori kashfiyotini tezlashtiruvchi molekulyar va genomik tahlil uchun AI platforma." },
+      { name: "Medical Sterilization Hub", sector: "MedTex", desc: "Klinika va shifoxonalar uchun markazlashtirilgan sterilizatsiya yechimlari va uskunalari." },
+      { name: "Amnio-test", sector: "MedTex", desc: "Homila kasalliklarini erta aniqlash uchun prenatal diagnostika testlari." },
+      { name: "TAOS", sector: "Deep Tech", desc: "Sifatli tibbiy yordamga kirishni yaxshilovchi texnologiyaga asoslangan loyiha." },
+      { name: "AcquiLAB", sector: "Deep Tech", desc: "Tadqiqot laboratoriyalari uchun ma'lumotlarni yig'ish va avtomatlashtirish vositalari." },
+      { name: "XavfsizDori", sector: "Farma", desc: "Soxta dorilarga qarshi dori autentifikatsiyasi va xavfsizlik platformasi." },
+      { name: "FITCAPS AI", sector: "Raqamli salomatlik", desc: "Shaxsiy ehtiyojlarga moslashtirilgan, AI yordamida shaxsiylashtirilgan nutritsevtik kapsulalar." },
+      { name: "CALMBIT", sector: "Raqamli salomatlik", desc: "Stress, uyqu va hissiy salomatlik uchun raqamli ruhiy sog'lomlik ilovasi." },
+      { name: "ElectroReboot", sector: "MedTex", desc: "Reabilitatsiya va tiklanish uchun elektroterapiya va neyrostimulyatsiya qurilmalari." },
     ],
     joinTitle: "Ushbu ro'yxatda o'z startapingizni ko'rishni xohlaysizmi?",
     joinDesc: "Keyingi oqimga ariza topshiring va ekotizimimizga qo'shiling.",
@@ -366,7 +369,7 @@ export type Dictionary = typeof uz;
 const ru: Dictionary = {
   brand: {
     name: "PharmaNext",
-    parent: "При Узфармагентстве",
+    parent: "При Агентстве по развитию медицинской и фармацевтической отрасли",
   },
   nav: {
     home: "Главная",
@@ -388,7 +391,7 @@ const ru: Dictionary = {
       "PharmaNext — это фарма-, медтех- и deep-tech инкубатор и акселератор Узбекистана. Мы превращаем смелые научные идеи в компании, улучшающие жизнь людей.",
     ctaPrimary: "Подать заявку в программу",
     ctaSecondary: "Смотреть программы",
-    trust: "Инициатива Узфармагентства Республики Узбекистан",
+    trust: "Инициатива Агентства по развитию медицинской и фармацевтической отрасли Республики Узбекистан",
   },
   stats: [
     { value: "120+", label: "Поддержанных проектов" },
@@ -473,7 +476,7 @@ const ru: Dictionary = {
     title: "Всё необходимое для стартапа в здравоохранении",
     subtitle: "Мы не просто финансируем — мы собираем всю экосистему в одном месте.",
     items: [
-      { title: "Регуляторное сопровождение", desc: "Прямая помощь в регистрации и сертификации вместе с Узфармагентством." },
+      { title: "Регуляторное сопровождение", desc: "Прямая помощь в регистрации и сертификации вместе с Агентством по развитию медицинской и фармацевтической отрасли." },
       { title: "Лаборатории и клиники", desc: "Доступ к исследовательским лабораториям, клиническим базам и площадкам для испытаний." },
       { title: "Капитал и инвесторы", desc: "Гранты, pre-seed и сеть международных инвесторов." },
       { title: "Экспертное менторство", desc: "Более 40 опытных менторов в фарме, медицине и технологиях." },
@@ -485,7 +488,7 @@ const ru: Dictionary = {
     eyebrow: "Экосистема",
     title: "Наши партнёры и экосистема",
     names: [
-      "Узфармагентство",
+      "Агентство по развитию медицинской и фармацевтической отрасли",
       "Министерство здравоохранения",
       "Медицинские университеты",
       "Инновационные центры",
@@ -501,7 +504,7 @@ const ru: Dictionary = {
   },
   footer: {
     tagline: "Фарма-, медтех- и deep-tech инкубатор и акселератор Узбекистана.",
-    parent: "При Узфармагентстве Республики Узбекистан.",
+    parent: "При Агентстве по развитию медицинской и фармацевтической отрасли Республики Узбекистан.",
     explore: "Разделы",
     contactTitle: "Контакты",
     address: "111809, ул. Богзор 1, Богзор, Зангиатинский район, Ташкентская область",
@@ -517,7 +520,7 @@ const ru: Dictionary = {
       eyebrow: "О нас",
       title: "Национальная платформа для инноваций в здравоохранении",
       subtitle:
-        "PharmaNext создан при Узфармагентстве и служит развитию экосистемы фармацевтики и медицинских технологий в Узбекистане.",
+        "PharmaNext создан при Агентстве по развитию медицинской и фармацевтической отрасли и служит развитию экосистемы фармацевтики и медицинских технологий в Узбекистане.",
     },
     mission: {
       title: "Наша миссия",
@@ -537,8 +540,8 @@ const ru: Dictionary = {
       ],
     },
     parentOrg: {
-      title: "В партнёрстве с Узфармагентством",
-      desc: "Агентство по развитию фармацевтической отрасли Республики Узбекистан (Узфармагентство) — государственный орган, регулирующий и развивающий фармацевтическую сферу. PharmaNext выступает его инновационным крылом, соединяя стартапы и государственные ресурсы.",
+      title: "В партнёрстве с Агентством по развитию медицинской и фармацевтической отрасли",
+      desc: "Агентство по развитию медицинской и фармацевтической отрасли Республики Узбекистан — государственный орган, регулирующий и развивающий медицинскую и фармацевтическую сферу. PharmaNext выступает его инновационным крылом, соединяя стартапы и государственные ресурсы.",
     },
   },
   programsPage: {
@@ -638,14 +641,17 @@ const ru: Dictionary = {
       subtitle:
         "Познакомьтесь с командами, которые поддерживает PharmaNext. Список постоянно обновляется.",
     },
-    note: "Примеры проектов — стартапы нового потока будут объявлены в ближайшее время.",
+    note: "Проекты, входящие в экосистему PharmaNext.",
     items: [
-      { name: "BioGen Labs", sector: "Биотех", desc: "Платформа для разработки локальных биосимиляров." },
-      { name: "MedSense", sector: "МедТех", desc: "Устройство для удалённого мониторинга хронических заболеваний." },
-      { name: "DiagnoAI", sector: "Deep Tech", desc: "Анализ медицинских изображений с помощью ИИ." },
-      { name: "PharmaChain", sector: "Фарма", desc: "Цифровизация цепочки поставок лекарств." },
-      { name: "VitaCare", sector: "Цифровое здоровье", desc: "Приложение телемедицины и консультаций для пациентов." },
-      { name: "GenomLab", sector: "Deep Tech", desc: "Генетический анализ и решения персонализированной медицины." },
+      { name: "MolGenix AI", sector: "Deep Tech", desc: "ИИ-платформа для молекулярного и геномного анализа, ускоряющая разработку лекарств." },
+      { name: "Medical Sterilization Hub", sector: "МедТех", desc: "Централизованные решения и оборудование для стерилизации для клиник и больниц." },
+      { name: "Amnio-test", sector: "МедТех", desc: "Пренатальная диагностика для раннего выявления патологий плода." },
+      { name: "TAOS", sector: "Deep Tech", desc: "Технологический проект, улучшающий доступ к качественной медицинской помощи." },
+      { name: "AcquiLAB", sector: "Deep Tech", desc: "Инструменты сбора данных и автоматизации для исследовательских лабораторий." },
+      { name: "XavfsizDori", sector: "Фарма", desc: "Платформа аутентификации и безопасности лекарств для борьбы с подделками." },
+      { name: "FITCAPS AI", sector: "Цифровое здоровье", desc: "Нутрицевтические капсулы с ИИ-персонализацией под индивидуальные потребности." },
+      { name: "CALMBIT", sector: "Цифровое здоровье", desc: "Цифровое приложение для ментального здоровья: стресс, сон и эмоции." },
+      { name: "ElectroReboot", sector: "МедТех", desc: "Устройства электротерапии и нейростимуляции для реабилитации и восстановления." },
     ],
     joinTitle: "Хотите увидеть свой стартап в этом списке?",
     joinDesc: "Подайте заявку на следующий поток и присоединяйтесь к нашей экосистеме.",
@@ -708,7 +714,7 @@ const ru: Dictionary = {
 const en: Dictionary = {
   brand: {
     name: "PharmaNext",
-    parent: "Under Uzpharmagency",
+    parent: "Under the Agency for Medical and Pharmaceutical Industry Development",
   },
   nav: {
     home: "Home",
@@ -730,7 +736,7 @@ const en: Dictionary = {
       "PharmaNext is Uzbekistan's pharma, medtech and deep-tech incubator and accelerator. We turn bold science into companies that improve lives.",
     ctaPrimary: "Apply to the program",
     ctaSecondary: "Explore programs",
-    trust: "An initiative of the Uzpharmagency of the Republic of Uzbekistan",
+    trust: "An initiative of the Agency for Medical and Pharmaceutical Industry Development of the Republic of Uzbekistan",
   },
   stats: [
     { value: "120+", label: "Projects supported" },
@@ -814,7 +820,7 @@ const en: Dictionary = {
     title: "Everything a health startup needs, in one place",
     subtitle: "We don't just fund — we bring the entire ecosystem together.",
     items: [
-      { title: "Regulatory navigation", desc: "Direct support with registration and certification together with Uzpharmagency." },
+      { title: "Regulatory navigation", desc: "Direct support with registration and certification together with the Agency for Medical and Pharmaceutical Industry Development." },
       { title: "Labs & clinics", desc: "Access to research labs, clinical sites and testing grounds." },
       { title: "Capital & investors", desc: "Grants, pre-seed and a network of international investors." },
       { title: "Expert mentorship", desc: "40+ experienced mentors across pharma, medicine and technology." },
@@ -826,7 +832,7 @@ const en: Dictionary = {
     eyebrow: "Ecosystem",
     title: "Our partners & ecosystem",
     names: [
-      "Uzpharmagency",
+      "Agency for Medical and Pharmaceutical Industry Development",
       "Ministry of Health",
       "Medical universities",
       "Innovation centers",
@@ -842,7 +848,7 @@ const en: Dictionary = {
   },
   footer: {
     tagline: "Uzbekistan's pharma, medtech and deep-tech incubator and accelerator.",
-    parent: "Under the Uzpharmagency of the Republic of Uzbekistan.",
+    parent: "Under the Agency for Medical and Pharmaceutical Industry Development of the Republic of Uzbekistan.",
     explore: "Explore",
     contactTitle: "Contact",
     address: "111809, 1 Bogzor street, Bogzor, Zangiota district, Tashkent region",
@@ -858,7 +864,7 @@ const en: Dictionary = {
       eyebrow: "About us",
       title: "A national platform for health innovation",
       subtitle:
-        "PharmaNext was established under Uzpharmagency to grow Uzbekistan's pharmaceutical and medical-technology ecosystem.",
+        "PharmaNext was established under the Agency for Medical and Pharmaceutical Industry Development to grow Uzbekistan's pharmaceutical and medical-technology ecosystem.",
     },
     mission: {
       title: "Our mission",
@@ -878,8 +884,8 @@ const en: Dictionary = {
       ],
     },
     parentOrg: {
-      title: "In partnership with Uzpharmagency",
-      desc: "The Agency for the Development of the Pharmaceutical Industry of the Republic of Uzbekistan (Uzpharmagency) is the state body that regulates and develops the pharmaceutical sector. PharmaNext acts as its innovation arm, bridging startups and public resources.",
+      title: "In partnership with the Agency for Medical and Pharmaceutical Industry Development",
+      desc: "The Agency for Medical and Pharmaceutical Industry Development of the Republic of Uzbekistan is the state body that regulates and develops the medical and pharmaceutical sector. PharmaNext acts as its innovation arm, bridging startups and public resources.",
     },
   },
   programsPage: {
@@ -979,14 +985,17 @@ const en: Dictionary = {
       subtitle:
         "Meet the teams PharmaNext supports. This list is updated continuously.",
     },
-    note: "Sample ventures — startups from the new cohort will be announced soon.",
+    note: "Ventures currently part of the PharmaNext ecosystem.",
     items: [
-      { name: "BioGen Labs", sector: "Biotech", desc: "A platform for developing local biosimilar medicines." },
-      { name: "MedSense", sector: "MedTech", desc: "A device for remote monitoring of chronic conditions." },
-      { name: "DiagnoAI", sector: "Deep Tech", desc: "AI-powered analysis of medical imaging." },
-      { name: "PharmaChain", sector: "Pharma", desc: "Digitizing the pharmaceutical supply chain." },
-      { name: "VitaCare", sector: "Digital Health", desc: "A telemedicine and consultation app for patients." },
-      { name: "GenomLab", sector: "Deep Tech", desc: "Genetic analysis and personalized-medicine solutions." },
+      { name: "MolGenix AI", sector: "Deep Tech", desc: "An AI platform for molecular and genomic analysis that accelerates drug discovery." },
+      { name: "Medical Sterilization Hub", sector: "MedTech", desc: "Centralized sterilization solutions and equipment for clinics and hospitals." },
+      { name: "Amnio-test", sector: "MedTech", desc: "Prenatal diagnostic testing for early detection of fetal conditions." },
+      { name: "TAOS", sector: "Deep Tech", desc: "A technology-driven venture improving access to quality healthcare." },
+      { name: "AcquiLAB", sector: "Deep Tech", desc: "Laboratory data acquisition and automation tools for research labs." },
+      { name: "XavfsizDori", sector: "Pharma", desc: "A drug authentication and safety platform to fight counterfeit medicines." },
+      { name: "FITCAPS AI", sector: "Digital Health", desc: "AI-personalized nutraceutical capsules tailored to individual health needs." },
+      { name: "CALMBIT", sector: "Digital Health", desc: "A digital mental-wellness app for stress, sleep and emotional health." },
+      { name: "ElectroReboot", sector: "MedTech", desc: "Electrotherapy and neurostimulation devices for rehabilitation and recovery." },
     ],
     joinTitle: "Want to see your startup on this list?",
     joinDesc: "Apply to the next cohort and join our ecosystem.",

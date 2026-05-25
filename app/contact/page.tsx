@@ -6,7 +6,7 @@ import ContactContent from "@/components/ContactContent";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Get in touch with PharmaNext — Uzbekistan's pharma, medtech and deep-tech incubator and accelerator under Uzpharmagency.",
+    "Get in touch with PharmaNext — Uzbekistan's pharma, medtech and deep-tech incubator and accelerator under the Agency for Medical and Pharmaceutical Industry Development.",
 };
 
 export default function ContactPage() {

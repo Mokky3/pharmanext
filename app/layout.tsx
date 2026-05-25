@@ -10,10 +10,10 @@ export const metadata: Metadata = {
     template: "%s — PharmaNext",
   },
   description:
-    "PharmaNext is Uzbekistan's pharma, medtech and deep-tech incubator and accelerator under Uzpharmagency. We turn bold science into companies that improve lives.",
+    "PharmaNext is Uzbekistan's pharma, medtech and deep-tech incubator and accelerator under the Agency for Medical and Pharmaceutical Industry Development. We turn bold science into companies that improve lives.",
   keywords: [
     "PharmaNext",
-    "Uzpharmagency",
+    "Tibbiyot va farmatsevtika tarmog'ini rivojlantirish agentligi",
     "pharma incubator",
     "medtech accelerator",
     "deep tech Uzbekistan",
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "PharmaNext — Health Innovation Incubator & Accelerator",
     description:
-      "Uzbekistan's pharma, medtech and deep-tech incubator and accelerator under Uzpharmagency.",
+      "Uzbekistan's pharma, medtech and deep-tech incubator and accelerator under the Agency for Medical and Pharmaceutical Industry Development.",
     type: "website",
     locale: "en_US",
   },

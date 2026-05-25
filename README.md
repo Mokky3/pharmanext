@@ -1,8 +1,8 @@
 # PharmaNext
 
 Website for **PharmaNext** — the pharma, medtech and deep-tech incubator and accelerator
-of Uzbekistan, an initiative under **Uzpharmagency** (the Agency for the Development of the
-Pharmaceutical Industry of the Republic of Uzbekistan).
+of Uzbekistan, an initiative under the **Agency for Medical and Pharmaceutical Industry Development**
+(Tibbiyot va farmatsevtika tarmog'ini rivojlantirish agentligi) of the Republic of Uzbekistan.
 
 The site is designed around **innovation and health**, with a light-blue brand palette and a
 teal accent.
@@ -33,7 +33,7 @@ matching dictionary.
 | Route        | Content                                            |
 | ------------ | -------------------------------------------------- |
 | `/`          | Home — hero, stats, focus areas, programs, process, why-us, partners, CTA |
-| `/about`     | Mission, vision, values, Uzpharmagency partnership |
+| `/about`     | Mission, vision, values, agency partnership |
 | `/programs`  | Incubator & Accelerator details, process, eligibility |
 | `/focus`     | Pharma & Biotech, MedTech & Digital Health, Deep Tech |
 | `/startups`  | Portfolio grid (sample ventures) + join CTA        |
